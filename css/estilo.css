@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+}
+
+:root{
+    --global-cor-alerta:rgb(216, 98, 98);
+    --global-cor-green: rgb(15, 223, 15);
+}
+
+h1{
+    font-family: 'Climate Crisis', cursive;
+    letter-spacing: 5px;
+}
+
+header{
+    margin: 20px 10px 50px;
+    text-align: center;
+}
+
+section{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    min-width: 300px;
+}
+
+section div{
+    margin: 10px 0;
+}
+
+hr{
+    margin: 20px 0px;
+}
+
+.alertaSalario,.alertaVA{
+    font-size: 13px;
+    color: var(--global-cor-alerta);
+    visibility: hidden;
+}
+
+#valeAlimentacao{
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+#Resultados{
+    margin-top: 30px;
+}
+
+#tabela{
+    text-align: left;
+    border-collapse: collapse;
+    margin: auto;
+    width: 50%;
+    min-width: 300px;
+    padding: 20px;
+    
+}
+
+.desconto{
+    color: var(--global-cor-alerta);
+}
+
+.deducoes{
+    border-top: 1px solid var(--global-cor-alerta);
+}
+
+.totaldesconto{
+    background-color: var(--global-cor-alerta);
+    color: white;
+}
+
+.totaLiquido{
+    background-color:var(--global-cor-green);
+    
+}
+
+#valeAlimentacao{
+    display: none;
+}
+
+.campova{
+    width: 300px;
+    margin: auto;
+}
+
+.campova input{
+    margin: auto;
+}
+
+input{
+    padding: 0 10px;
+    
+}
+

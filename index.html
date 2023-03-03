@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de Pagamento</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Folha de Pagamento</h1>
+    </header>
+    <section>
+        <div>
+            <div>
+                <p>Salário R$: 
+                    <input id="salario" type="number" oninput="esconderAlertaSalario()">
+                </p>
+                <p class="alertaSalario">Salário não pode ser vazio ou igual à 0.</p>
+            </div>
+            
+            <div>
+                <p>Possui Vale Transporte?
+                    <select name="selectVT" id="selectVT">
+                    <option value="1">Sim</option>
+                    <option value="2">Não</option>
+                </select>
+            </div>
+
+            <div>
+                <p class="campova">Possui VA / VR?
+                    <select name="selectVA" id="selectVA" onchange="changeVA()">
+                    <option value="1">Não</option>
+                    <option value="2">Sim</option>
+                    <input id="valeAlimentacao" type="number" oninput="esconderAlertaVA()" placeholder="insira o valor R$">
+                    </select>
+                </p>
+                <p class="alertaVA">Valor do VA/VR não pode ser vazio ou igual à 0.</p>
+            </div>
+
+            <div>
+                <p>
+                    <input type="button" value="Verificar" onclick="firstAction()">
+                    <input type="button" value="Reiniciar" onclick="reiniciar()">
+                </p>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+<script src="js/ambiente.js"></script>    
+</body>
+</html>
